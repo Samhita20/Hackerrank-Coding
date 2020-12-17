@@ -1,0 +1,8 @@
+for _ in range(int(input())):
+    x,y,z = map(int,input().split())
+    if(abs(z-y)<abs(z-x)):
+        print('Cat B')
+    elif(abs(z-y)>abs(z-x)):
+        print('Cat A')
+    else:
+        print('Mouse C')
