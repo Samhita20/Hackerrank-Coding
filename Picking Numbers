@@ -1,0 +1,14 @@
+Picking Numbers
+
+Given an array of integers, find the longest subarray where the absolute difference between any two elements is less than or equal to .
+
+n = int(input())
+l = list(map(int,input().split()))
+m = 0
+for i in l:
+    c = l.count(i)
+    d = l.count(i-1) 
+    c = c + d
+    if(c>m):
+        m = c
+print(m)
