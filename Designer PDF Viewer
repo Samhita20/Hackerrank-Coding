@@ -1,0 +1,68 @@
+Designer PDF Viewer
+
+When a contiguous block of text is selected in a PDF viewer, the selection is highlighted with a blue rectangle. In this PDF viewer, each word is highlighted independently. For example:
+
+PDF-highighting.png
+
+There is a list of  character heights aligned by index to their letters. For example, 'a' is at index  and 'z' is at index . There will also be a string. Using the letter heights given, determine the area of the rectangle highlight in  assuming all letters are  wide.
+
+AtoZ_ht = list(map(int,input().split()))
+word = input()
+length = len(word)
+l = list(word)
+ht = []
+for i in l:
+    if(i=='a'):
+        ht.append(AtoZ_ht[0])
+    elif(i=='b'):
+        ht.append(AtoZ_ht[1])
+    elif(i=='c'):
+        ht.append(AtoZ_ht[2])
+    elif(i=='d'):
+        ht.append(AtoZ_ht[3])
+    elif(i=='e'):
+        ht.append(AtoZ_ht[4]) 
+    elif(i=='f'):
+        ht.append(AtoZ_ht[5])
+    elif(i=='g'):
+        ht.append(AtoZ_ht[6])  
+    elif(i=='h'):
+        ht.append(AtoZ_ht[7])
+    elif(i=='i'):
+        ht.append(AtoZ_ht[8])
+    elif(i=='j'):
+        ht.append(AtoZ_ht[9])
+    elif(i=='k'):
+        ht.append(AtoZ_ht[10])
+    elif(i=='l'):
+        ht.append(AtoZ_ht[11])
+    elif(i=='m'):
+        ht.append(AtoZ_ht[12])
+    elif(i=='n'):
+        ht.append(AtoZ_ht[13])
+    elif(i=='o'):
+        ht.append(AtoZ_ht[14])
+    elif(i=='p'):
+        ht.append(AtoZ_ht[15])
+    elif(i=='q'):
+        ht.append(AtoZ_ht[16])
+    elif(i=='r'):
+        ht.append(AtoZ_ht[17])
+    elif(i=='s'):
+        ht.append(AtoZ_ht[18])
+    elif(i=='t'):
+        ht.append(AtoZ_ht[19])
+    elif(i=='u'):
+        ht.append(AtoZ_ht[20])
+    elif(i=='v'):
+        ht.append(AtoZ_ht[21])
+    elif(i=='w'):
+        ht.append(AtoZ_ht[22])
+    elif(i=='x'):
+        ht.append(AtoZ_ht[23])
+    elif(i=='y'):
+        ht.append(AtoZ_ht[24])
+    elif(i=='z'):
+        ht.append(AtoZ_ht[25])
+breadth = max(ht)
+print(length*breadth)
