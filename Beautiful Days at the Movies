@@ -1,0 +1,12 @@
+Beautiful Days at the Movies
+
+
+
+
+def beautifulDays(i, j, k):
+    count = 0
+    for x in range(i,j+1):
+        rev = (str(x))[::-1]
+        if((abs(int(rev)-x))%k==0):
+            count += 1
+    return count
