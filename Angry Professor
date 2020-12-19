@@ -1,0 +1,10 @@
+Angry Professor
+
+def angryProfessor(k, arrival):
+    count=0
+    for i in arrival:
+        if(i<=0):
+            count += 1
+    if(count>=k):
+        return "NO"
+    return "YES"
