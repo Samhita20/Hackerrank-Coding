@@ -1,0 +1,9 @@
+Circular Array Rotation
+
+def circularArrayRotation(a, k, q):
+    l = []
+    arr = deque(a) 
+    arr.rotate(k)
+    for i in q:
+        l.append(arr[i])
+    return l
