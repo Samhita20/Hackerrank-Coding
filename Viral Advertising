@@ -1,0 +1,13 @@
+Viral Advertising
+
+import math
+def viralAdvertising(n):
+    s = 2
+    x = 2
+    for i in range(2,n+1):
+        y = x*3
+        x =math.floor(y/2)
+        s += x
+    return s
+n = int(input())
+print(viralAdvertising(n))
