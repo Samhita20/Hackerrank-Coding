@@ -1,0 +1,8 @@
+Save the Prisoner!
+
+def saveThePrisoner(n, m, s):
+    x = (n+m+s-1)%n
+    if(x==0):
+        return n
+    else:
+        return x
