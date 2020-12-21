@@ -1,0 +1,10 @@
+Sequence Equation
+
+def permutationEquation(p):
+    ans = []
+    n = len(p)
+    for x in range(1,n+1):
+        i = p.index(x)
+        y = p.index(i+1)
+        ans.append(y+1)
+    return ans
