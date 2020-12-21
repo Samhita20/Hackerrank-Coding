@@ -1,0 +1,17 @@
+Jumping on the Clouds: Revisited
+
+def jumpingOnClouds(c, k):
+    n = len(c)
+    e = 100
+    i = 0
+    while(i<n):
+        y = (i+k)%n
+        x = c[(i+k)%n]
+        if(x==0):
+            e = e - 1
+        else:
+            e = e - 3
+        i = y
+        if(i==0):
+            break
+    return e
